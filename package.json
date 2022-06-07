@@ -1,8 +1,17 @@
 {
   "name": "use-ripples",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "license": "MIT",
   "description": "ripple effect for react",
+  "keywords": [
+    "react",
+    "ripple",
+    "ripple-effect",
+    "react-hooks",
+    "material-design",
+    "minimal",
+    "zero-dependency"
+  ],
   "repository": {
     "type": "git",
     "url": "hota1024/use-ripples"
