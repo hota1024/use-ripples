@@ -4093,11 +4093,13 @@ url-to-options@^1.0.1:
   resolved "https://registry.yarnpkg.com/url-to-options/-/url-to-options-1.0.1.tgz#1505a03a289a48cbd7a434efbaeec5055f5633a9"
   integrity sha1-FQWgOiiaSMvXpDTvuu7FBV9WM6k=
 
-use-ripples@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/use-ripples/-/use-ripples-0.0.8.tgz#dd82e13fe44fef1004c75dbef1dcaf96bd18ad55"
-  integrity sha512-Y/eF+n9FKTHuGFtNhfD6TByv6WZfKU6QXmWNCtGfxiV9wUvMM27YJOp7GLDc/Wa+E4OW0aUT1BL9zQOy8Th5aQ==
+use-ripples@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/use-ripples/-/use-ripples-0.0.12.tgz#52d4dd08891ea2d349caf41aa12f767f94d3f7ef"
+  integrity sha512-lUx7CsX1hOcFAzK1uyLasw41BQLSq3wKxKOgDJ8DT8HZB/J6NotMxYs2DuI1RLEgPo1xreH82ANCxSeSAJyn9A==
   dependencies:
+    react "^18.2.0"
+    react-dom "^18.2.0"
     rollup-plugin-terser "^7.0.2"
 
 util-deprecate@~1.0.1:

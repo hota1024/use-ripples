@@ -21,7 +21,7 @@ Click these buttons to see the effect.
 import { useRipples } from 'use-ripples'
 
 export const RippleButton = () => {
-  const { createByClick, Ripples } = useRipples({
+  const { createByEvent, Ripples } = useRipples({
     color: 'black', // default is 'white'
   })
 
@@ -35,7 +35,7 @@ export const RippleButton = () => {
   }
 
   return (
-    <button style={style} onClick={createByClick}>
+    <button style={style} onMouseDown={createByEvent}>
       {Ripples}
       Button
     </button>
@@ -51,7 +51,7 @@ export const RippleButton = () => {
 import { useRipples } from 'use-ripples'
 
 export const RippleButton = () => {
-  const { createByClick, Ripples } = useRipples({
+  const { createByEvent, Ripples } = useRipples({
     color: 'black', // default is 'white'
   })
 
@@ -65,7 +65,7 @@ export const RippleButton = () => {
   }
 
   return (
-    <button style={style} onClick={createByClick}>
+    <button style={style} onClick={createByEvent} onTouchStart={createByClick}>
       {Ripples}
       Button
     </button>

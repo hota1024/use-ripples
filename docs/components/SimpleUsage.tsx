@@ -13,7 +13,7 @@ const Button = ({
   children: React.ReactNode
   shadowColor: string
 }) => {
-  const { createByClick, Ripples } = useRipples({
+  const { createByEvent, Ripples } = useRipples({
     color: rippleColor,
   })
 
@@ -38,8 +38,7 @@ const Button = ({
           color: textColor,
           boxShadow: `0 0 16px ${shadowColor}`,
         }}
-        onMouseDown={createByClick}
-        onTouchStart={(e) => console.log(e)}
+        onMouseDown={createByEvent}
       >
         {Ripples}
         {children}

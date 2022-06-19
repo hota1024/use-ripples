@@ -46,12 +46,10 @@ export const Ripple: React.VFC<RippleProps> = ({
         .animate(
           [
             {
-              ...style,
               opacity: 1,
             },
             {
               opacity: 0,
-              ...style,
               transform: `scale(${size})`,
             },
           ],
