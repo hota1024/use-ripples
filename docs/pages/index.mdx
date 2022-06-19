@@ -1,0 +1,78 @@
+import { SimpleUsage } from '../components/SimpleUsage'
+
+# use-ripples
+
+`use-ripples` provides a simple way to add a ripple effect to any element.
+
+## Overview
+
+- [x] 🏷️ Full TypeScript Support
+- [x] 🎨 Customizable Ripple Properties
+- [x] 🚀 SSR Support
+
+## Preview
+
+Click these buttons to see the effect.
+
+<SimpleUsage />
+
+## Simple Usage
+
+import { useRipples } from 'use-ripples'
+
+export const RippleButton = () => {
+  const { createByClick, Ripples } = useRipples({
+    color: 'black', // default is 'white'
+  })
+
+  const style = {
+    position: 'relative', // required
+    overflow: 'hidden',   // required
+    border: 'none',
+    borderRadius: '99999px',
+    background: '#0033ff',
+    padding: '8px 32px'
+  }
+
+  return (
+    <button style={style} onClick={createByClick}>
+      {Ripples}
+      Button
+    </button>
+  )
+}
+
+<div style={{ textAlign: 'center', margin: '32px 0' }}>
+  <RippleButton />
+</div>
+
+
+```jsx
+import { useRipples } from 'use-ripples'
+
+export const RippleButton = () => {
+  const { createByClick, Ripples } = useRipples({
+    color: 'black', // default is 'white'
+  })
+
+  const style = {
+    position: 'relative', // required
+    overflow: 'hidden',   // required
+    border: 'none',
+    borderRadius: '99999px',
+    background: '#0033ff',
+    padding: '8px 32px'
+  }
+
+  return (
+    <button style={style} onClick={createByClick}>
+      {Ripples}
+      Button
+    </button>
+  )
+}
+
+<div style={{ textAlign: 'center', margin: '32px 0' }}>
+  <RippleButton />
+</div>
+```
