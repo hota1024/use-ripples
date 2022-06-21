@@ -50,7 +50,9 @@ export const Ripple: React.VFC<RippleProps> = ({
             },
             {
               opacity: 0,
-              transform: `scale(${size})`,
+              width: `${size}px`,
+              height: `${size}px`,
+              transform: `translate(${size / -2}px, ${size / -2}px)`,
             },
           ],
           { duration, fill: 'forwards', easing: 'ease-out' }

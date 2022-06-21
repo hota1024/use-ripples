@@ -15,27 +15,9 @@ export type UseRipplesProps = {
  * UseRipplesReturn type.
  */
 export type UseRipplesReturn = {
-  createByEvent(event: MouseEvent | TouchEvent): void
+  createByEvent(event: MouseEvent): void
   create(rippleProps: Omit<RippleProps, 'onFinish'>): void
   Ripples: JSX.Element[]
-}
-
-const getTouchInfo = (e: MouseEvent | TouchEvent) => {
-  const { clientX, clientY } =
-    window['TouchEvent'] && e instanceof TouchEvent
-      ? e.touches[0]
-      : (e as MouseEvent)
-  const el = e.currentTarget instanceof Element ? e.currentTarget : null
-  const { width, height, left, top } = el
-    ? el.getBoundingClientRect()
-    : {
-        width: 0,
-        height: 0,
-        left: 0,
-        top: 0,
-      }
-
-  return { clientX, clientY, width, height, left, top } as const
 }
 
 /**
@@ -56,7 +38,11 @@ export const useRipples: UseRipples = ({
   const [id, setId] = useState(0)
 
   const createByClick: UseRipplesReturn['createByEvent'] = (e) => {
-    const { clientX, clientY, left, top, width, height } = getTouchInfo(e)
+    const { clientX, clientY } = e
+    const el = e.currentTarget instanceof Element ? e.currentTarget : null
+    const { width, height, left, top } = el
+      ? el.getBoundingClientRect()
+      : { width: 0, height: 0, left: 0, top: 0 }
 
     if (centered) {
       create({
