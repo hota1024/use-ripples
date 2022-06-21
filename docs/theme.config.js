@@ -1,6 +1,8 @@
 export default {
+  repository: 'https://github.com/hota1024/use-ripples',
   projectLink: 'https://github.com/hota1024/use-ripples', // GitHub link in the navbar
   docsRepositoryBase: 'https://github.com/hota1024/use-ripples/blob/master', // base URL for the docs repository
+  branch: 'master',
   titleSuffix: ' – use-ripples',
   nextLinks: true,
   prevLinks: true,
