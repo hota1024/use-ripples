@@ -4093,10 +4093,10 @@ url-to-options@^1.0.1:
   resolved "https://registry.yarnpkg.com/url-to-options/-/url-to-options-1.0.1.tgz#1505a03a289a48cbd7a434efbaeec5055f5633a9"
   integrity sha1-FQWgOiiaSMvXpDTvuu7FBV9WM6k=
 
-use-ripples@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/use-ripples/-/use-ripples-0.0.12.tgz#52d4dd08891ea2d349caf41aa12f767f94d3f7ef"
-  integrity sha512-lUx7CsX1hOcFAzK1uyLasw41BQLSq3wKxKOgDJ8DT8HZB/J6NotMxYs2DuI1RLEgPo1xreH82ANCxSeSAJyn9A==
+use-ripples@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/use-ripples/-/use-ripples-0.0.13.tgz#4869d5bb808d690e95cea4f7da67b9ea674db791"
+  integrity sha512-xpH1qNd9pCjdkL0WLx/7SeKpKXdZkkVGvoiDLl8TMG1ddspmkR7mBmf/goU/4/ionAivvd+nzORVb3njVf6ciQ==
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"
