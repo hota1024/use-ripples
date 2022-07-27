@@ -22,6 +22,7 @@ const Button = ({
       <button
         tabIndex={1}
         style={{
+          zIndex: 1,
           inset: 'all',
           position: 'relative',
           overflow: 'hidden',
